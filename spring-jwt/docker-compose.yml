@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  jwt-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jinfluenza/jwt-demo
+    ports:
+      - "8080:8080"
