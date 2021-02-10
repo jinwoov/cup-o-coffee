@@ -21,10 +21,10 @@ phases:
   build:
     commands:
        - echo "building the docker image"
-       - docker build -t $DOCKER_HUB_USERNAME/jdk-demo .
+       - docker build -t jinwoov/jdk-demo .
   post_build:
     commands:
-       - docker push $DOCKER_HUB_USERNAME/jdk-demo
+       - docker push jinwoov/jdk-demo
       # - command
 #reports:
   #report-name-or-arn:
