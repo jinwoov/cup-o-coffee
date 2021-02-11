@@ -8,7 +8,7 @@ RUN mvn dependency:go-offline -B
 
 COPY ./spring-jwt/src src
 
-RUN mvn install -DskipTests
+RUN mvn install -DskipTests -e
 
 # Unzip
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
