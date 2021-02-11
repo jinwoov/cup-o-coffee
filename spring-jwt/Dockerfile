@@ -2,11 +2,11 @@ FROM maven:3.6.1-jdk-8-alpine as jwt-app
 
 WORKDIR /jwtapp
 
-COPY pom.xml .
+COPY ./spring-jwt/pom.xml .
 
 RUN mvn dependency:go-offline -B
 
-COPY src src
+COPY ./spring-jwt/src src
 
 RUN mvn install -DskipTests
 
