@@ -5,15 +5,6 @@ env:
      DOCKER_HUB_USERNAME: code-build:docker_hub_username
      DOCKER_HUB_PASSWORD: code-build:docker_hub_password
 phases:
-  #install:
-    #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
-    #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
-    #runtime-versions:
-      # name: version
-      # name: version
-    #commands:
-      # - command
-      # - command
   pre_build:
     commands:
        - echo "logging in to docker"
@@ -25,15 +16,6 @@ phases:
   post_build:
     commands:
        - docker push jinwoov/jdk-demo
-      # - command
-#reports:
-  #report-name-or-arn:
-    #files:
-      # - location
-      # - location
-    #base-directory: location
-    #discard-paths: yes
-    #file-format: JunitXml | CucumberJson
 artifacts:
     files:
         - '**/*'
