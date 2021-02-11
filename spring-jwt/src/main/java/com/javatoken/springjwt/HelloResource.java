@@ -32,7 +32,7 @@ public class HelloResource {
 
     @RequestMapping("/helloworld")
     public String helloworld() {
-        return "Hello world Mochiko";
+        return "Hello world";
     }
 
     // taking the POST request
