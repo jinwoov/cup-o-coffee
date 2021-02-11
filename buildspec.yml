@@ -21,7 +21,7 @@ phases:
   build:
     commands:
        - echo "building the docker image"
-       - docker build -f ./spring-jwt -t jinwoov/jdk-demo .
+       - docker build -f ./spring-jwt/Dockerfile -t jinwoov/jdk-demo .
   post_build:
     commands:
        - docker push jinwoov/jdk-demo
