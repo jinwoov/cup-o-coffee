@@ -1,8 +1,24 @@
 # Hello-World
 
 ## Endpoints:
-- `/hello`: need authentication and jwt, use POSTMAN with jwtoken
-- `/authenticate`: route that will generate token with correct credential
+- `/hello`: need authentication and jwt, use POSTMAN with jwtoken `/GET` route
+    - application type is json
+    ```json
+    {
+        "username": "jin",
+        "password": "jin"
+    } 
+    ```
+    - Header should include Authentication with `Bearer <jwtoken>` provided by authenticate.
+    
+- `/authenticate`: route that will generate token with correct credential `/POST` route
+    - application type is json 
+    ``` json
+    {
+        "username": "jin",
+        "password": "jin"
+    }
+    ```
 - `/helloworld`: because why not?
 
 
