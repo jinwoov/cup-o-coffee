@@ -1,5 +1,6 @@
 package com.javatoken.springjwt;
 
+import com.github.tomakehurst.wiremock.WireMockServer;
 import io.cucumber.java.Status;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,6 +9,8 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+
+import static org.apache.http.client.methods.RequestBuilder.options;
 import static org.junit.Assert.*;
 
 
@@ -22,6 +25,7 @@ public class StepDefinition {
 
     @When("the client calls for /{string} request")
     public void the_website_issues_Get(String rq) throws Throwable {
+        WireMockServer wireMockServer = new WireMockServer(options().*);
         HttpGet request = new HttpGet("http://localhost:8080/" + rq);
         final CloseableHttpClient httpClient = HttpClients.createDefault();
         try (CloseableHttpResponse response = httpClient.execute(request)) {
