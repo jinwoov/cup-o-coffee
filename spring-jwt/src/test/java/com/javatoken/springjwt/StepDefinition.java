@@ -25,7 +25,6 @@ public class StepDefinition {
 
     @When("the client calls for /{string} request")
     public void the_website_issues_Get(String rq) throws Throwable {
-        WireMockServer wireMockServer = new WireMockServer(options().*);
         HttpGet request = new HttpGet("http://localhost:8080/" + rq);
         final CloseableHttpClient httpClient = HttpClients.createDefault();
         try (CloseableHttpResponse response = httpClient.execute(request)) {
