@@ -22,8 +22,6 @@ VOLUME /tmp
 
 ARG DEPENDENCY=/jwtapp/target/dependency
 
-EXPOSE 8080
-
 COPY --from=jwt-app ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY --from=jwt-app ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=jwt-app ${DEPENDENCY}/BOOT-INF/classes /app
