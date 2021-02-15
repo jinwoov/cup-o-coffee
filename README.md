@@ -1,5 +1,9 @@
 # Hello-World
 
+## Deployed Website
+
+*[Deployed Here](https://cup-o-tea.herokuapp.com/helloworld)*  
+
 ## Endpoints:
 - `/hello`: need authentication and jwt, use POSTMAN with jwtoken `GET` route
     - application type is json
