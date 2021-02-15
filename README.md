@@ -4,6 +4,8 @@
 
 *[Deployed Here](https://cup-o-tea.herokuapp.com/helloworld)*  
 
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/jinfluenza/codefresh-pulumi%2FCup-o-tea?type=cf-1&key=eyJhbGciOiJIUzI1NiJ9.NjAxZGFhMWY0YmY4N2RkNmY2NzY1MzMy.RRKnJ1bIBk7UvZJxGw8We3oyv56h4yEIjBR41N4n-Ps)]( https://g.codefresh.io/pipelines/edit/new/builds?id=60253ae564db849ab4b14637&pipeline=Cup-o-tea&projects=codefresh-pulumi&projectId=602145fb5766b7bc4ad52e8a)  
+
 ## Endpoints:
 - `/hello`: need authentication and jwt, use POSTMAN with jwtoken `GET` route
     - application type is json
