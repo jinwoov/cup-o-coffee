@@ -1,0 +1,130 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T14:25:21.018Z",
+        "line": 5,
+        "name": "Ebay Logo on Advanced Search Page",
+        "description": "",
+        "id": "ebay-advanced-search-page;ebay-logo-on-advanced-search-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat steps.EbayAdvancedSearch_Steps.i_am_eaby_advanced_search_page(EbayAdvancedSearch_Steps.java:11)\n\tat ✽.I am Eaby Advanced Search Page(file:///Users/Jin.Kim/work-practice/cup-o-coffee/Cucumber_Test/features/EbayAdvancedSearch.feature:7)\n",
+              "duration": 4119000,
+              "status": "pending"
+            },
+            "line": 7,
+            "name": "I am Eaby Advanced Search Page",
+            "match": {
+              "location": "steps.EbayAdvancedSearch_Steps.i_am_eaby_advanced_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I click on Ebay Logo",
+            "match": {
+              "location": "steps.EbayAdvancedSearch_Steps.i_click_on_ebay_logo()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I am navigated to Ebay Home Page",
+            "match": {
+              "location": "steps.EbayAdvancedSearch_Steps.i_am_navigated_to_ebay_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P24"
+          }
+        ]
+      }
+    ],
+    "name": "Ebay Advanced Search Page",
+    "description": "",
+    "id": "ebay-advanced-search-page",
+    "keyword": "Feature",
+    "uri": "file:features/EbayAdvancedSearch.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-17T14:25:21.070Z",
+        "line": 5,
+        "name": "Advanced Search Link",
+        "description": "",
+        "id": "ebay-home-page-scenarios;advanced-search-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027USC02DR7XTMD6T\u0027, ip: \u00272600:1700:8c61:c9e0:0:0:0:26%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002715.0.2\u0027\nDriver info: driver.version: EdgeDriver\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat steps.EbayHome_Steps.i_am_on_ebay_home_page(EbayHome_Steps.java:19)\n\tat ✽.I am on Ebay Home Page(file:///Users/Jin.Kim/work-practice/cup-o-coffee/Cucumber_Test/features/Ebay_Home.feature:13)\nCaused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:27878/status] to be available after 20001 ms\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat steps.EbayHome_Steps.i_am_on_ebay_home_page(EbayHome_Steps.java:19)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)\n\tat com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)\n\t... 50 more\n",
+              "duration": 20271609000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "I am on Ebay Home Page",
+            "match": {
+              "location": "steps.EbayHome_Steps.i_am_on_ebay_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I click on Advanced link",
+            "match": {
+              "location": "steps.EbayHome_Steps.i_click_on_advanced_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I navigate to Advanced Search Page",
+            "match": {
+              "location": "steps.EbayHome_Steps.i_navigate_to_advanced_search_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P1"
+          }
+        ]
+      }
+    ],
+    "name": "Ebay Home Page Scenarios",
+    "description": "",
+    "id": "ebay-home-page-scenarios",
+    "keyword": "Feature",
+    "uri": "file:features/Ebay_Home.feature",
+    "tags": []
+  }
+]
