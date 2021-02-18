@@ -1,7 +1,9 @@
 FROM maven:3.6.1-jdk-8-alpine
 
+WORKDIR /jwtapp
+
 #Copy all sources
-COPY . .
+COPY ./spring-jwt .
 
 #Build ( because you want to execute tests after the spring boot application is started you should disable test during build phase )
 RUN mvn install -DskipTests
