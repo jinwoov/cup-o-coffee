@@ -9,6 +9,6 @@ COPY ./spring-jwt .
 RUN mvn install -DskipTests
 
 #Start container
-COPY commands.sh /scripts/commands.sh
-RUN ["chmod", "+x", "/scripts/commands.sh"]
-ENTRYPOINT ["/scripts/commands.sh"]
+COPY ./commands.sh ./commands.sh
+RUN ["chmod", "+x", "./commands.sh"]
+ENTRYPOINT ["./commands.sh"]
