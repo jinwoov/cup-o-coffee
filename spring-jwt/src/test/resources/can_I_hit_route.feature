@@ -10,4 +10,4 @@ Feature: Can I hit the route?
     | route       |   response |
     | helloworld  |    200     |
     | hello-world |    403     |
-    | authenticate |   405     | 
+    | authenticate |   405     |
