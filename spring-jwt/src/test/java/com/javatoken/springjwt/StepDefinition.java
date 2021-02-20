@@ -25,7 +25,7 @@ public class StepDefinition {
 
     @When("the client calls for /{string} request")
     public void the_website_issues_Get(String rq) throws Throwable {
-        HttpGet request = new HttpGet("http://localhost:8080/" + rq);
+        HttpGet request = new HttpGet("http://localhost:5000/" + rq);
         final CloseableHttpClient httpClient = HttpClients.createDefault();
         try (CloseableHttpResponse response = httpClient.execute(request)) {
             SC = response.getStatusLine().getStatusCode();

@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "5a8d44ca-5ba4-434e-a589-22d4e34fe186",
+		"name": "Useful",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/newman",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/newman",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"newman"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
