@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="36f81478-bff9-406c-9290-09d71b31ccec" created="3.6.0" activeEnvironment="Default environment" name="REST Project 1" updated="3.6.0 2021-02-02T15:53:59Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerUIAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Settings File Password" value=""/>
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="&lt;all>"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="&lt;all>"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="TestRunner Path" value="/Applications/ReadyAPI-3.6.0.app/Contents/Resources/app/bin"/>
+  <con:entry key="Environment" value="No Environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="83f9f19c-47e1-4e1b-b7e0-06c44f163448" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://cup-o-tea-dev.herokuapp.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Hello" path="/hello" id="205ec576-dd9b-4fbb-bb4e-ce26b24a16f7">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Hello" id="ce5fc8d2-5346-4272-aa97-a65abc4155b0" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>403</con:status>
+          <con:params/>
+          <con:element xmlns:hel="https://cup-o-tea-dev.herokuapp.com/hello">hel:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/plain;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="9b232220-ba15-4b0c-9ee4-9ef31867e4ba" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Helloworld" path="/helloworld" id="7f0aefd8-8de0-4718-aa33-90eb04a483b1">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Helloworld" id="2856741f-c2f8-45d4-a309-c01aff3e7da0" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/plain;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="7bf731e1-8b9d-433e-9372-374776ae96a8" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Authenticate" path="/authenticate" id="87a623a5-cdf2-4051-9b7c-c60ac24f5ce7">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Authenticate" id="576fa371-de94-4fbe-903f-f28dd03eeb00" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:aut="https://cup-o-tea-dev.herokuapp.com/authenticate">aut:Fault</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:aut="https://cup-o-tea-dev.herokuapp.com/authenticate">aut:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="0e3fa38d-e361-41ab-9514-a06ee5a86af0" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="59ce98f1-95e5-4028-adda-f155792f4f1b" name="https://cup-o-tea-dev.herokuapp.com Test Suite">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="3adbe304-8ccd-4fdc-b9ba-618c8c5fcb8a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/hello" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Match_content" id="b3ebc08f-4983-463d-8440-3491f583879c">
+        <con:settings/>
+        <con:config service="https://cup-o-tea-dev.herokuapp.com" resourcePath="/hello" methodName="Hello" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Match_content" id="9b232220-ba15-4b0c-9ee4-9ef31867e4ba" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqaW4iLCJleHAiOjE2MTQwNTMzNjEsImlhdCI6MTYxNDAxNzM2MX0.l9KYsk-Cx-8CBbnBTBIpuv2JgYVRRuo3S34LvNKoMe0" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cup-o-tea-dev.herokuapp.com/hello</con:originalUri>
+            <con:assertion type="XPath Match" id="590c15a3-9790-41cb-956a-587d23a9cf5c" name="Match content of [data]">
+              <con:configuration>
+                <path>//data[1]/text()</path>
+                <content>Hello Universe</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Status Code w/o Jwt Token" id="e32cb992-8bb2-4c99-b019-9f73c1e4e837">
+        <con:settings/>
+        <con:config service="https://cup-o-tea-dev.herokuapp.com" methodName="Hello" resourcePath="/hello" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Status Code w/o Jwt Token" id="91e55b1f-12b0-4895-a221-b25c636ea889" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cup-o-tea-dev.herokuapp.com/hello</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="e709da0f-60df-4887-b6ce-35a952f7cd62" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>403</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Status_Code_w_Jwt_Token" id="a69066e7-b556-45b0-a543-db98074626d4">
+        <con:settings/>
+        <con:config service="https://cup-o-tea-dev.herokuapp.com" methodName="Hello" resourcePath="/hello" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Status_Code_w_Jwt_Token" id="cbecf013-cd60-4189-9d95-59413088e246" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqaW4iLCJleHAiOjE2MTQwNTMzNjEsImlhdCI6MTYxNDAxNzM2MX0.l9KYsk-Cx-8CBbnBTBIpuv2JgYVRRuo3S34LvNKoMe0" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cup-o-tea-dev.herokuapp.com/hello</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="b73566de-890d-42ed-9e90-21b8faaf2ae5" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="97647add-0f0c-4b74-a0e6-e8c444e319c4" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/helloworld" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Response String" id="36ae373e-a710-479e-b2ff-742ea324b263">
+        <con:settings/>
+        <con:config service="https://cup-o-tea-dev.herokuapp.com" resourcePath="/helloworld" methodName="Helloworld" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Response String" id="7bf731e1-8b9d-433e-9372-374776ae96a8" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cup-o-tea-dev.herokuapp.com/helloworld</con:originalUri>
+            <con:assertion type="Simple Equals" id="286a9e6e-6347-40e1-a58a-0d881977ed34" name="Equals">
+              <con:configuration>
+                <patternText>Hello world</patternText>
+                <caseSensitive>true</caseSensitive>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Status Code" id="f1af8a60-afd8-48b6-a642-119947737ba9">
+        <con:settings/>
+        <con:config service="https://cup-o-tea-dev.herokuapp.com" methodName="Helloworld" resourcePath="/helloworld" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Status Code" id="8a30fa34-1e2c-4a4f-b38e-a0c0abe1b7b5" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cup-o-tea-dev.herokuapp.com/helloworld</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="37b66bc2-d5eb-41fc-bd3f-88f3ea289ad1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="04f23ebd-7df8-4dfe-b5ca-fbda307d6512" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/authenticate" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="Contains_jwt_token_response_w_correct_auth" id="410e30e7-fca4-4b2d-8364-b8a6481772e2">
+        <con:settings/>
+        <con:config service="https://cup-o-tea-dev.herokuapp.com" resourcePath="/authenticate" methodName="Authenticate" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Contains_jwt_token_response_w_correct_auth" id="0e3fa38d-e361-41ab-9514-a06ee5a86af0" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+            <con:request>{
+	"username": "jin",
+	"password": "jin"
+}</con:request>
+            <con:originalUri>https://cup-o-tea-dev.herokuapp.com/authenticate</con:originalUri>
+            <con:assertion type="Simple Contains" id="5cce09cd-39be-480e-ab6a-db6602b81c2a" name="Contains">
+              <con:configuration>
+                <token>jwt</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Status Code" id="622eb465-e1d2-4c44-99d3-109d37ef54fc">
+        <con:settings/>
+        <con:config service="https://cup-o-tea-dev.herokuapp.com" methodName="Authenticate" resourcePath="/authenticate" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Status Code" id="92c111d4-5bd1-4e14-800e-3aaffecf449f" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>https://cup-o-tea-dev.herokuapp.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://cup-o-tea-dev.herokuapp.com/authenticate</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="c15fc119-06f8-4948-b7ef-8ece3a913d82" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>400</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
